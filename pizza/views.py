@@ -1,14 +1,14 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
+
 
 def index(request):
-    # return HttpResponse("Witaj w barze Pizza!")
     return render(request, 'pizza/index.html')
+
 
 def news(request):
     return render(request, 'pizza/news.html')
 
 
-def menu(request):
-    return HttpResponse("<h2>Menu</h2>")
-
+def gallery(request):
+    return HttpResponse("Witaj w galerii")
